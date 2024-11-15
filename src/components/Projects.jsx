@@ -22,9 +22,9 @@ const Projects = () => {
     {
       title: "Wordify",
       description: "A sophisticated text manipulation tool built in Go that handles number system conversions, smart text formatting, and context-aware corrections.",
-      image: "/api/placeholder/600/400",
+      image: "https://i.postimg.cc/tgx0dgmG/wordify.jpg",
       technologies: ["Go", "CLI", "Text Processing", "File I/O"],
-      github: "https://i.postimg.cc/tgx0dgmG/wordify.jpg",
+      github: "https://github.com/Stella-Achar-Oiro/wordify.git",
       demo: "#"
     }
   ];
