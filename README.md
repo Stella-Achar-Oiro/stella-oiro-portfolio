@@ -1,13 +1,5 @@
 # Stella Oiro Portfolio
 
-
-<function_calls>
-<invoke name="artifacts">
-<parameter name="id">portfolio-guide</parameter>
-<parameter name="type">application/vnd.ant.markdown</parameter>
-<parameter name="title">Stella Oiro Portfolio Guide</parameter>
-<parameter name="content"># Stella Oiro Portfolio - Developer's Guide
-
 ## Project Overview
 
 The portfolio is a modern, responsive React application showcasing my work as a Software Developer, Technical Writer, and Community Organizer based in Kisumu, Kenya.
