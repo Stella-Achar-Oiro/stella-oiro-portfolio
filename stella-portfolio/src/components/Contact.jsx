@@ -36,7 +36,7 @@ const Contact = () => {
               <div>
                 <p className="font-medium">Email</p>
                 <a href="mailto:your.email@example.com" className="text-gray-600 hover:text-primary-500">
-                  your.email@example.com
+                  stellaoiro11@gmail.com
                 </a>
               </div>
             </div>
@@ -46,7 +46,7 @@ const Contact = () => {
               <div>
                 <p className="font-medium">Phone</p>
                 <a href="tel:+1234567890" className="text-gray-600 hover:text-primary-500">
-                  +123 456 7890
+                  +254 723 469 406
                 </a>
               </div>
             </div>

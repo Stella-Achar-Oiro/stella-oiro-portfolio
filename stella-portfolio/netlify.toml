@@ -1,0 +1,79 @@
+[build]
+  # Directory to publish (the static content directory)
+  publish = "dist"
+  
+  # Default build command
+  command = "npm run build"
+
+# Production context: all deploys from the Production branch set in your site's
+# deploy contexts will inherit these settings.
+[context.production]
+  # Environment variables
+  environment = { NODE_VERSION = "18.0.0", NPM_VERSION = "9.0.0" }
+
+# Deploy Preview context: all deploys generated from a pull/merge request will
+# inherit these settings.
+[context.deploy-preview]
+  command = "npm run build"
+
+# Branch Deploy context: all deploys that are not from a pull/merge request or
+# from the Production branch will inherit these settings.
+[context.branch-deploy]
+  command = "npm run build"
+
+# Specific branch context: all deploys from this specific branch will inherit
+# these settings.
+[context.staging] # 'staging' is an example
+  command = "npm run build:staging"
+
+# Redirects and rewrite rules
+[[redirects]]
+  # Redirect all paths to index.html (for single-page applications)
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+  # Add security headers
+  force = true
+  [redirects.headers]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.netlify.app fonts.googleapis.com fonts.gstatic.com cdnjs.cloudflare.com"
+
+# Headers for all pages
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Asset optimization
+[build.processing]
+  skip_processing = false
+[build.processing.css]
+  bundle = true
+  minify = true
+[build.processing.js]
+  bundle = true
+  minify = true
+[build.processing.html]
+  pretty_urls = true
+[build.processing.images]
+  compress = true
+
+# Plugin configurations
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+# Functions configuration (if you're using Netlify Functions)
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
