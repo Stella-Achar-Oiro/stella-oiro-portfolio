@@ -4,27 +4,27 @@ import { Github, ExternalLink } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "Project One",
-      description: "A full-stack application built with Golang and React. Implements user authentication, real-time updates, and database integration.",
-      image: "/api/placeholder/600/400",
-      technologies: ["Golang", "React", "PostgreSQL", "Docker"],
-      github: "https://github.com/Stella-Achar-Oiro/project-one",
+      title: "Groupie Tracker",
+      description: "A dynamic web application built with Go and JavaScript that visualizes music artist data and concert locations with interactive maps.",
+      image: "https://i.postimg.cc/wxtW7rPn/groupietracker.jpg",
+      technologies: ["Go", "JavaScript", "HTML/CSS", "Leaflet.js"],
+      github: "https://github.com/Stella-Achar-Oiro/groupie-tracker",
       demo: "#"
     },
     {
-      title: "Project Two",
-      description: "A Python-based data analysis tool that processes large datasets and generates interactive visualizations.",
-      image: "/api/placeholder/600/400",
-      technologies: ["Python", "Pandas", "Matplotlib", "Flask"],
-      github: "https://github.com/Stella-Achar-Oiro/project-two",
+      title: "My First API",
+      description: "A professional-grade RESTful API for task management built with Go, featuring comprehensive error handling, middleware support, and Swagger documentation.",
+      image: "https://i.postimg.cc/L5TFq0Qq/restapi.png",
+      technologies: ["Go", "RESTful API", "Swagger", "Git"],
+      github: "https://github.com/Stella-Achar-Oiro/my-first-api",
       demo: "#"
     },
     {
-      title: "Project Three",
-      description: "An e-commerce platform built with modern JavaScript frameworks and integrated payment processing.",
+      title: "Wordify",
+      description: "A sophisticated text manipulation tool built in Go that handles number system conversions, smart text formatting, and context-aware corrections.",
       image: "/api/placeholder/600/400",
-      technologies: ["JavaScript", "Node.js", "Express", "MongoDB"],
-      github: "https://github.com/Stella-Achar-Oiro/project-three",
+      technologies: ["Go", "CLI", "Text Processing", "File I/O"],
+      github: "https://i.postimg.cc/tgx0dgmG/wordify.jpg",
       demo: "#"
     }
   ];
