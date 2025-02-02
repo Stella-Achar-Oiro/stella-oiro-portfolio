@@ -176,9 +176,9 @@ const Header = () => {
             custom={1}
             variants={headerTextVariants}
           >
-            Software Developer, Technical Writer & Community Organizer at Zone01 Kisumu,
-            passionate about creating innovative solutions and sharing knowledge to empower
-            communities and drive positive change in Africa.
+            Software developer passionate about blockchain technology and full-stack development. 
+            Proven track record of delivering scalable solutions on the Internet Computer Protocol (ICP). 
+            Committed to writing clean, maintainable code and sharing knowledge through technical writing.
           </motion.p>
 
           <motion.div
