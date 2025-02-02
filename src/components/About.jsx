@@ -1,28 +1,53 @@
 import React from 'react';
-import { Code2, Users, Lightbulb, Award } from 'lucide-react';
+import { Code2, Users, Lightbulb, Award, Briefcase } from 'lucide-react';
 
 const About = () => {
   const achievements = [
     {
       icon: <Award className="w-8 h-8 text-primary-500" />,
-      title: "AfyaChain Winner",
-      description: "First place at Zone01 Kisumu hackathon for blockchain-based EMR system"
+      title: "ICP Megahackathon Finalist",
+      description: "Kintaraa Project - Decentralized Community Support Platform"
     },
     {
       icon: <Users className="w-8 h-8 text-primary-500" />,
-      title: "Community Leader",
-      description: "Organizer at Gophers Kisumu, active in tech community events"
+      title: "Community Leadership",
+      description: "Community Organizer at Gophers Kisumu"
     },
     {
-      icon: <Lightbulb className="w-8 h-8 text-primary-500" />,
-      title: "Innovation Impact",
-      description: "Created Kintsugi Hub for GBV survivors and Rootika for local artisans"
+      icon: <Award className="w-8 h-8 text-primary-500" />,
+      title: "Certification",
+      description: "Rust Smart Contract 101 by Dacade"
+    }
+  ];
+
+  const experience = [
+    {
+      title: "Software Developer",
+      company: "Zone01 Kisumu",
+      period: "Jan 2024 - Present",
+      description: [
+        "Develop scalable backend services with Go and microservices",
+        "Create modern frontend applications using JavaScript and React",
+        "Design blockchain solutions with Rust and Motoko on ICP",
+        "Maintain testing strategies with over 90% code coverage",
+        "Write technical documentation and API specifications"
+      ]
+    },
+    {
+      title: "Data Analyst & Developer",
+      company: "Azubi Africa",
+      period: "June 2022 - Dec 2023",
+      description: [
+        "Developed data processing pipelines with Python and SQL",
+        "Implemented machine learning models for predictive analytics",
+        "Created automated reporting systems using Python libraries"
+      ]
     }
   ];
 
   const projects = [
     {
-      title: "Kintsugi Hub",
+      title: "Kintaraa",
       description: "A secure, decentralized platform supporting GBV survivors across Africa with multilingual resources",
       tags: ["Blockchain", "AI", "Social Impact"]
     },
@@ -45,12 +70,31 @@ const About = () => {
         
         <div className="max-w-3xl mx-auto text-gray-600 mb-12">
           <p className="mb-6">
-            Hi! I'm Stella Oiro, a dedicated software developer and community organizer based in Kisumu, 
-            currently sharpening my skills as an apprentice developer at Zone01 Kisumu. My journey in tech 
-            is fueled by a commitment to building solutions that empower communities and address real-world 
-            challenges through innovative applications of technology.
+            Software developer based in Kisumu City, Kenya, passionate about blockchain technology 
+            and full-stack development. I combine my technical expertise with a strong focus on 
+            delivering scalable solutions, particularly on the Internet Computer Protocol (ICP).
           </p>
-          
+
+          <div className="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+              <Briefcase className="w-6 h-6 text-primary-500" />
+              Work Experience
+            </h3>
+            <div className="space-y-6">
+              {experience.map((job, index) => (
+                <div key={index} className="border-b border-gray-100 last:border-0 pb-4 last:pb-0">
+                  <h4 className="font-semibold text-gray-800">{job.title} - {job.company}</h4>
+                  <p className="text-sm text-gray-500 mb-2">{job.period}</p>
+                  <ul className="list-disc list-inside space-y-1">
+                    {job.description.map((item, itemIndex) => (
+                      <li key={itemIndex} className="text-sm">{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="bg-white p-6 rounded-lg shadow-md mb-6">
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Recent Impact Projects</h3>
             <div className="space-y-4">
