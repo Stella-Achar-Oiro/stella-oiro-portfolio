@@ -4,28 +4,29 @@ import { Github, ExternalLink } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "Groupie Tracker",
-      description: "A dynamic web application built with Go and JavaScript that visualizes music artist data and concert locations with interactive maps.",
-      image: "https://i.postimg.cc/wxtW7rPn/groupietracker.jpg",
-      technologies: ["Go", "JavaScript", "HTML/CSS", "Leaflet.js"],
-      github: "https://github.com/Stella-Achar-Oiro/groupie-tracker",
-      demo: "#"
+      title: "Kintaraa - ICP Megahackathon Finalist",
+      description: "A decentralized community support platform using Internet Computer Protocol. Implemented secure data management system with Rust backend and blockchain. Created responsive, high-performance frontend with React.",
+      image: "https://i.postimg.cc/Dw59jgvj/Screenshot-from-2025-02-03-00-07-41.png",
+      technologies: ["ICP", "Rust", "React", "Blockchain"],
+      github: "https://github.com/Kintaraa/kintaraa",
+      demo: "https://24dyw-2yaaa-aaaam-adxmq-cai.icp0.io/",
+      showDemo: true
     },
     {
-      title: "My First API",
-      description: "A professional-grade RESTful API for task management built with Go, featuring comprehensive error handling, middleware support, and Swagger documentation.",
-      image: "https://i.postimg.cc/L5TFq0Qq/restapi.png",
-      technologies: ["Go", "RESTful API", "Swagger", "Git"],
-      github: "https://github.com/Stella-Achar-Oiro/my-first-api",
-      demo: "#"
+      title: "Decentralized Auction System",
+      description: "A complete auction system using smart contracts. Designed and implemented secure auction management including bidding and reserve price mechanisms. Created robust data persistence system utilizing stable variables.",
+      image: "https://i.postimg.cc/vHYXqd4y/9b46f25f-cb4e-4908-b558-05c60eb55c0a.png",
+      technologies: ["Motoko", "Smart Contracts", "ICP"],
+      github: "https://github.com/Stella-Achar-Oiro/motoko-challange.git",
+      showDemo: false
     },
     {
-      title: "Wordify",
-      description: "A sophisticated text manipulation tool built in Go that handles number system conversions, smart text formatting, and context-aware corrections.",
-      image: "https://i.postimg.cc/tgx0dgmG/wordify.jpg",
-      technologies: ["Go", "CLI", "Text Processing", "File I/O"],
-      github: "https://github.com/Stella-Achar-Oiro/wordify.git",
-      demo: "#"
+      title: "AfyaChain",
+      description: "Healthcare records management system on Internet Computer blockchain. Implemented secure, HIPAA-compliant data storage with Go backend. Developed efficient CRUD operations with blockchain persistence layer.",
+      image: "https://i.postimg.cc/FFD0KkKt/Screenshot-from-2025-02-03-00-12-53.png",
+      technologies: ["Go", "React", "Blockchain", "Healthcare"],
+      github: "https://github.com/Vincent-Omondi/AfyaChain",
+      showDemo: false
     }
   ];
 
@@ -36,7 +37,7 @@ const Projects = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg">
+            <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <img 
                 src={project.image} 
                 alt={project.title}
@@ -51,7 +52,7 @@ const Projects = () => {
                   {project.technologies.map((tech, techIndex) => (
                     <span 
                       key={techIndex}
-                      className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
+                      className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm"
                     >
                       {tech}
                     </span>
@@ -63,20 +64,22 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
+                    className="flex items-center gap-2 text-gray-600 hover:text-primary-600"
                   >
                     <Github size={20} />
                     <span>Code</span>
                   </a>
-                  <a 
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
-                  >
-                    <ExternalLink size={20} />
-                    <span>Live Demo</span>
-                  </a>
+                  {project.showDemo && (
+                    <a 
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-600 hover:text-primary-600"
+                    >
+                      <ExternalLink size={20} />
+                      <span>Live Demo</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
