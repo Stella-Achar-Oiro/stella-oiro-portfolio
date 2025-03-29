@@ -176,9 +176,9 @@ const Header = () => {
             custom={1}
             variants={headerTextVariants}
           >
-            Software developer passionate about blockchain technology and full-stack development. 
-            Proven track record of delivering scalable solutions on the Internet Computer Protocol (ICP). 
-            Committed to writing clean, maintainable code and sharing knowledge through technical writing.
+            Software Developer & Technical Writer. 
+            Passionate about developing scalable solutions, driving innovation, and streamlining workflows.
+            Skilled in project coordination, stakeholder communication, and technical documentation.
           </motion.p>
 
           <motion.div

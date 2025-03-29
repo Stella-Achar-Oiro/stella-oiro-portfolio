@@ -3,30 +3,32 @@ import React from 'react';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Software Development",
+      title: "Technical Skills",
       skills: [
-        "Backend Development (Go)",
-        "Frontend (React, JavaScript)",
-        "RESTful APIs",
-        "Microservices",
+        "Software Development: Golang, JavaScript, Python (Django), Motoko, Rust",
+        "Web Development: React, FastAPI, TypeScript, HTML, SCSS, Redux",
+        "DevOps & Cloud: Docker, Git, CI/CD, AWS, Cloud Services",
+        "Healthcare Systems: EMR, HMIS, Clinical Decision Support Systems",
+        "Database Management: MongoDB, PostgreSQL, SQLite3, NoSQL (JSON)"
       ]
     },
     {
-      title: "Blockchain & AI",
+      title: "Project Management",
       skills: [
-        "Smart Contracts (Motoko, Rust)",
-        "ICP Infrastructure",
-        "Machine Learning",
-        "Data Processing",
+        "Tools: JIRA, Trello, Asana, Airtable, Slack, Google Workspace",
+        "Project Planning & Stakeholder Communication",
+        "Status Reports & Scheduling",
+        "Administrative Support & Risk Management",
+        "APIs & Microservices: REST, SOAP, GraphQL, Webhook APIs"
       ]
     },
     {
-      title: "Additional Skills",
+      title: "Soft Skills",
       skills: [
-        "Technical Writing",
-        "Testing & Documentation",
-        "Version Control (Git)",
-        "Community Leadership",
+        "Team Coordination & Leadership",
+        "Problem-Solving & Risk Assessment",
+        "Organizational Skills & Multitasking",
+        "Clear Communication & Creativity"
       ]
     }
   ];
@@ -34,7 +36,7 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Technical Skills</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Skills & Expertise</h2>
         
         <div className="grid md:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
@@ -56,12 +58,12 @@ const Skills = () => {
         </div>
 
         <div className="mt-12 max-w-3xl mx-auto text-center">
-          <h3 className="text-xl font-semibold mb-4">Interests & Activities</h3>
+          <h3 className="text-xl font-semibold mb-4">Interests & Aspirations</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
               "Blockchain Technology",
+              "Software Project Management",
               "Technical Writing",
-              "Open Source",
               "Healthcare Innovation",
               "Community Building"
             ].map((interest, index) => (

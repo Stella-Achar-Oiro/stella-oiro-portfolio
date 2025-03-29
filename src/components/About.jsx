@@ -22,30 +22,34 @@ const About = () => {
 
   const experience = [
     {
-      title: "Software Developer",
+      title: "Software Developer & Technical Writer",
       company: "Zone01 Kisumu",
-      period: "Jan 2024 - Present",
+      period: "Apr 2024 - Present",
       description: [
-        "Develop scalable backend services with Go and microservices",
-        "Create modern frontend applications using JavaScript and React",
-        "Design blockchain solutions with Rust and Motoko on ICP",
-        "Maintain testing strategies with over 90% code coverage",
-        "Write technical documentation and API specifications"
+        "Led Software Projects by managing project planning, stakeholder communication, and tracking deliverables",
+        "Coordinated team activities and maintained timelines using JIRA, Trello, and Asana",
+        "Created technical documentation and status reports for developers and stakeholders",
+        "Conducted risk assessments via code reviews and quality audits",
+        "Developed full-stack applications using Golang, React, and FastAPI"
       ]
     },
     {
-      title: "Data Analyst & Developer",
+      title: "Data Analyst Trainee",
       company: "Azubi Africa",
-      period: "June 2022 - Dec 2023",
+      period: "June 2023",
       description: [
-        "Developed data processing pipelines with Python and SQL",
-        "Implemented machine learning models for predictive analytics",
-        "Created automated reporting systems using Python libraries"
+        "Performed data analysis and reporting to support project planning decisions",
+        "Assisted in data preprocessing for structured decision-making"
       ]
     }
   ];
 
   const projects = [
+    {
+      title: "AfyaChain Blockchain Solution",
+      description: "A blockchain-based medical record system using Golang with smart contracts for secure patient data management",
+      tags: ["Healthcare", "Blockchain", "Golang"]
+    },
     {
       title: "Kintaraa",
       description: "A secure, decentralized platform supporting GBV survivors across Africa with multilingual resources",
@@ -55,11 +59,6 @@ const About = () => {
       title: "Rootika",
       description: "Digital marketplace connecting Kenyan jua kali artisans with customers globally",
       tags: ["E-commerce", "Local Trade", "Community"]
-    },
-    {
-      title: "AfyaChain",
-      description: "Award-winning blockchain-based EMR and HMIS system enhancing healthcare accessibility",
-      tags: ["Healthcare", "Blockchain", "Security"]
     }
   ];
 
@@ -70,9 +69,10 @@ const About = () => {
         
         <div className="max-w-3xl mx-auto text-gray-600 mb-12">
           <p className="mb-6">
-            Software developer based in Kisumu City, Kenya, passionate about blockchain technology 
-            and full-stack development. I combine my technical expertise with a strong focus on 
-            delivering scalable solutions, particularly on the Internet Computer Protocol (ICP).
+            Dedicated Apprentice Software Developer with experience in Golang, JavaScript, and Python. 
+            Skilled in creating healthcare-focused applications including predictive analytics systems 
+            and electronic medical record solutions. Passionate about using technology to solve healthcare 
+            challenges and communicating technical concepts effectively.
           </p>
 
           <div className="bg-white p-6 rounded-lg shadow-md mb-6">
