@@ -4,6 +4,10 @@
 
 The portfolio is a modern, responsive React application showcasing my work as a Software Developer, Technical Writer, and Community Organizer based in Kisumu, Kenya.
 
+## Live Portfolio
+
+Visit my portfolio website: [stella-oiro-portfolio.netlify.app](https://stella-oiro-portfolio.netlify.app)
+
 ## Tech Stack
 
 - **Frontend Framework**: React with Vite
@@ -193,8 +197,8 @@ For updates and maintenance:
 4. Bug fixes and improvements
 
 ## Resources
+- [Live Portfolio](https://stella-oiro-portfolio.netlify.app)
 - [GitHub Repository](https://github.com/Stella-Achar-Oiro)
 - [DEV.to Profile](https://dev.to/stellaacharoiro)
 - [LinkedIn](https://www.linkedin.com/in/stella-achar-oiro/)
-- [Twitter](https://x.com/Stella_Oiro)</parameter>
-</invoke>
+- [Twitter](https://x.com/Stella_Oiro)
